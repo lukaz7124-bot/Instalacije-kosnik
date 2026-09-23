@@ -1,0 +1,6 @@
+# izvorne fotografije (pred pretvorbo v webp) – ne gredo na splet
+assets/img/src/
+.DS_Store
+Thumbs.db
+desktop.ini
+node_modules/

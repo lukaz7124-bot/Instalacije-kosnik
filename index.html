@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="sl" data-intro>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Zgodnja nastavitev razredov: js, zmanjšano gibanje, uvodna animacija (enkrat na sejo). ?gibanje=1 vsili animacije za predogled. -->
+<script>
+(function (d) {
+  var h = d.documentElement, rm = false;
+  h.classList.add('js');
+  try { rm = matchMedia('(prefers-reduced-motion: reduce)').matches && !/[?&]gibanje=1/.test(location.search); } catch (e) {}
+  if (rm) h.classList.add('rm');
+  try { if (h.hasAttribute('data-intro') && !rm && !sessionStorage.getItem('nk-uvod')) h.classList.add('js-intro'); } catch (e) {}
+})(document);
+</script>
+
+<title>Inštalater strojnih inštalacij in vodovodar Kranj | Košnik</title>
+<meta name="description" content="Inštalater strojnih inštalacij in vodovodar v Kranju: vodovod, centralno ogrevanje, toplotne črpalke, talno gretje, menjava bojlerjev in radiatorjev. Tel. 031 444 466.">
+<!-- DEPLOY STEP: zamenjaj https://nejc-kosnik.vercel.app z dejansko domeno (v vseh datotekah, tudi sitemap.xml in robots.txt). -->
+<link rel="canonical" href="https://nejc-kosnik.vercel.app/">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="theme-color" content="#0C0C0D">
+<meta name="author" content="Inštalacije centralnih in vodovodnih naprav, Nejc Košnik s.p.">
+<meta name="geo.region" content="SI-052">
+<meta name="geo.placename" content="Kranj">
+<meta name="geo.position" content="46.2473214;14.3776877">
+<meta name="ICBM" content="46.2473214, 14.3776877">
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="sl_SI">
+<meta property="og:site_name" content="Inštalacije Košnik">
+<meta property="og:title" content="Inštalater strojnih inštalacij in vodovodar Kranj – Nejc Košnik s.p.">
+<meta property="og:description" content="Vodovod, centralno ogrevanje, toplotne črpalke in talno gretje v Kranju in po Gorenjskem. Pokličite 031 444 466.">
+<meta property="og:url" content="https://nejc-kosnik.vercel.app/">
+<meta property="og:image" content="https://nejc-kosnik.vercel.app/assets/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Inštalacije Košnik – inštalater strojnih inštalacij v Kranju">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,400..800&family=Martian+Mono:wght@400;500&display=swap">
+<link rel="preload" as="image" href="assets/img/toplotna-crpalka-sanitarna-voda-kranj-1200.webp" imagesrcset="assets/img/toplotna-crpalka-sanitarna-voda-kranj-640.webp 640w, assets/img/toplotna-crpalka-sanitarna-voda-kranj-1200.webp 1200w" imagesizes="(min-width: 1024px) 38vw, 92vw">
+<link rel="stylesheet" href="assets/styles.css">
+<script src="assets/main.js" defer></script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": ["Plumber", "HVACBusiness"],
+      "@id": "https://nejc-kosnik.vercel.app/#podjetje",
+      "name": "Inštalacije centralnih in vodovodnih naprav, Nejc Košnik s.p.",
+      "alternateName": ["Inštalacije Košnik", "Nejc Košnik s.p.", "Inštalater strojnih inštalacij Nejc Košnik"],
+      "description": "Inštalater strojnih inštalacij in vodovodar iz Kranja: vodovodne inštalacije, centralno ogrevanje, kotlovnice, toplotne črpalke, talno ogrevanje, prenova kopalnic in plinske napeljave.",
+      "url": "https://nejc-kosnik.vercel.app/",
+      "telephone": "+386 31 444 466",
+      "email": "instalacijekosnik@gmail.com",
+      "image": "https://nejc-kosnik.vercel.app/assets/img/toplotna-crpalka-sanitarna-voda-kranj-1200.webp",
+      "logo": "https://nejc-kosnik.vercel.app/favicon.svg",
+      "foundingDate": "2014-10-03",
+      "founder": { "@type": "Person", "name": "Nejc Košnik" },
+      "vatID": "SI97464937",
+      "taxID": "97464937",
+      "identifier": { "@type": "PropertyValue", "propertyID": "Matična številka", "value": "6698107000" },
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Jezerska cesta 78b",
+        "addressLocality": "Kranj",
+        "postalCode": "4000",
+        "addressRegion": "Gorenjska",
+        "addressCountry": "SI"
+      },
+      "geo": { "@type": "GeoCoordinates", "latitude": 46.2473214, "longitude": 14.3776877 },
+      "hasMap": "https://maps.google.com/?cid=13656609047360480369",
+      "areaServed": [
+        { "@type": "City", "name": "Kranj" },
+        { "@type": "City", "name": "Šenčur" },
+        { "@type": "City", "name": "Naklo" },
+        { "@type": "City", "name": "Cerklje na Gorenjskem" },
+        { "@type": "City", "name": "Preddvor" },
+        { "@type": "City", "name": "Tržič" },
+        { "@type": "City", "name": "Škofja Loka" },
+        { "@type": "AdministrativeArea", "name": "Gorenjska" }
+      ],
+      "knowsAbout": ["vodovodne inštalacije", "centralno ogrevanje", "toplotne črpalke", "talno ogrevanje", "menjava bojlerja", "menjava radiatorjev z zamrzovanjem cevi", "prenova kopalnic", "plinske napeljave", "kotlovnice"],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Strojne inštalacije",
+        "itemListElement": [
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Vodovodne inštalacije in popravila", "url": "https://nejc-kosnik.vercel.app/vodovodne-instalacije-kranj.html" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Centralno ogrevanje in kotlovnice", "url": "https://nejc-kosnik.vercel.app/centralno-ogrevanje-kranj.html" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Toplotne črpalke", "url": "https://nejc-kosnik.vercel.app/toplotne-crpalke-kranj.html" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Talno ogrevanje", "url": "https://nejc-kosnik.vercel.app/talno-ogrevanje-kranj.html" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Prenova kopalnic", "url": "https://nejc-kosnik.vercel.app/adaptacija-kopalnic-kranj.html" } }
+        ]
+      },
+      "sameAs": [
+        "https://maps.google.com/?cid=13656609047360480369",
+        "https://www.mojmojster.net/izvajalec/nejc_kosnik",
+        "https://www.bizi.si/NEJC-KOSNIK-S-P/"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://nejc-kosnik.vercel.app/#stran",
+      "url": "https://nejc-kosnik.vercel.app/",
+      "name": "Inštalacije Košnik",
+      "inLanguage": "sl",
+      "publisher": { "@id": "https://nejc-kosnik.vercel.app/#podjetje" }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "Ali lahko zamenjate radiator brez praznjenja celotnega sistema?", "acceptedAnswer": { "@type": "Answer", "text": "Da. Radiatorje in ventile menjamo tudi s sistemom zamrzovanja cevi: na cevi naredimo ledeni čep, zato celotnega sistema ni treba izprazniti. To je posebej praktično v blokih." } },
+        { "@type": "Question", "name": "Kje opravljate storitve?", "acceptedAnswer": { "@type": "Answer", "text": "Sedež imamo na Jezerski cesti 78b v Kranju. Delamo v Kranju z okolico in po Gorenjskem." } },
+        { "@type": "Question", "name": "Ali montirate toplotne črpalke za sanitarno vodo?", "acceptedAnswer": { "@type": "Answer", "text": "Da. Toplotno črpalko za sanitarno vodo dobavimo, priklopimo na vodovod in po potrebi na obstoječo kotlovnico ter jo zaženemo." } },
+        { "@type": "Question", "name": "Koliko stane menjava bojlerja ali radiatorja?", "acceptedAnswer": { "@type": "Answer", "text": "Cena je odvisna od naprave, dostopa in obstoječe napeljave. Po kratkem opisu ali ogledu pripravimo ponudbo z materialom in delom." } },
+        { "@type": "Question", "name": "Ali izdate račun?", "acceptedAnswer": { "@type": "Answer", "text": "Da. Smo zavezanec za DDV (ID za DDV SI97464937), za vsako delo izdamo račun." } }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<a class="skip" href="#vsebina">Preskoči na vsebino</a>
+
+<!-- ============ Ikone in znak (SVG sprite) ============ -->
+<svg class="sprite" aria-hidden="true" focusable="false">
+  <symbol id="nk-mark" viewBox="0 0 120 100">
+    <path d="M6 58.6C30 57.9 88 59.1 114 58.3"/>
+    <path d="M6 71.4C32 72 86 70.8 114 71.6"/>
+    <path d="M23.5 52.2l.3 25.6M29 52.4l-.2 25.3M91 52.1l.3 25.6M96.5 52.4l-.2 25.3"/>
+    <path d="M41.5 58.4C44.5 47 75.5 46.6 78.5 58.4M41.5 71.6C44.5 83 75.5 83.4 78.5 71.6"/>
+    <path d="M56.8 48.6V31.4M63.2 48.6V31.4M52.4 36h15.2"/>
+    <g style="stroke: var(--mark-accent, #D52B1E)">
+      <path d="M47.4 19.2a12.6 12.6 0 1 0 25.2 0a12.6 12.6 0 1 0-25.2 0"/>
+      <path d="M60 6.8v24.8M47.6 19.2h24.8"/>
+    </g>
+  </symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path d="M21 16.4v3a2 2 0 0 1-2.2 2 19.6 19.6 0 0 1-8.5-3 19.3 19.3 0 0 1-6-6 19.6 19.6 0 0 1-3-8.6A2 2 0 0 1 3.3 1.6h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L7.3 9.4a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.6 2z"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><path d="M3 5.5h18v13H3z"/><path d="m3.5 6 8.5 7 8.5-7"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21.5s-7-6.2-7-11.7a7 7 0 0 1 14 0c0 5.5-7 11.7-7 11.7z"/><circle cx="12" cy="9.8" r="2.6"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5.2l3.4 2"/></symbol>
+  <symbol id="i-doc" viewBox="0 0 24 24"><path d="M6 2.5h8.5L19 7v14.5H6z"/><path d="M14 2.5V7h5M9 12h7M9 16h7"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h15M13 6l6 6-6 6"/></symbol>
+  <symbol id="i-out" viewBox="0 0 24 24"><path d="M7 17 17 7M8.5 7H17v8.5"/></symbol>
+  <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 4v16M4 12h16"/></symbol>
+  <symbol id="i-close" viewBox="0 0 24 24"><path d="M5.5 5.5l13 13M18.5 5.5l-13 13"/></symbol>
+  <symbol id="i-left" viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></symbol>
+  <symbol id="i-right" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></symbol>
+  <symbol id="i-star" viewBox="0 0 24 24"><path d="m12 2.8 2.8 5.8 6.3.9-4.6 4.4 1.1 6.3L12 17.2l-5.6 3 1.1-6.3L2.9 9.5l6.3-.9z"/></symbol>
+  <!-- ikone storitev -->
+  <symbol id="s-voda" viewBox="0 0 48 48"><path d="M5 13v12"/><path d="M5 16.5h17a7.5 7.5 0 0 1 7.5 7.5v3.5"/><path d="M5 22h15a3.5 3.5 0 0 1 3.5 3.5v2"/><path d="M22 27.5h9.5"/><path d="M13 16.5v-6M8 10.5h10"/><path d="M26.8 33.5c-1.7 2.4-2.6 4-2.6 5.1a2.6 2.6 0 0 0 5.2 0c0-1.1-.9-2.7-2.6-5.1z"/></symbol>
+  <symbol id="s-radiator" viewBox="0 0 48 48"><rect x="9" y="11" width="30" height="26" rx="1.5"/><path d="M15 11v26M21 11v26M27 11v26M33 11v26"/><path d="M3.5 33H9M39 15h5.5M44.5 11.5v7"/></symbol>
+  <symbol id="s-crpalka" viewBox="0 0 48 48"><rect x="14" y="3.5" width="20" height="41" rx="5"/><path d="M14 17h20"/><circle cx="24" cy="10.2" r="3.2"/><path d="M24 7v6.4M20.8 10.2h6.4"/><path d="M19.5 25h9M19.5 30h9M19.5 35h9"/></symbol>
+  <symbol id="s-talno" viewBox="0 0 48 48"><path d="M5 10h30a4.5 4.5 0 0 1 0 9H13a4.5 4.5 0 0 0 0 9h22a4.5 4.5 0 0 1 0 9H5"/><path d="M3 43h42"/></symbol>
+  <symbol id="s-kopalnica" viewBox="0 0 48 48"><path d="M10 44V13a6.5 6.5 0 0 1 6.5-6.5h5A6.5 6.5 0 0 1 28 13v1.5"/><path d="M20.5 14.5h15l-2.2 5H22.7z"/><path d="M23.5 24.5l-1 3M28 24.5v3M32.5 24.5l1 3M22.5 31.5l-1 3M28 31.5v3M33.5 31.5l1 3"/></symbol>
+  <symbol id="s-plamen" viewBox="0 0 48 48"><rect x="10" y="3.5" width="28" height="34" rx="1.5"/><path d="M24 31c-4.1 0-6.3-2.7-6.3-5.8 0-3.6 3.1-5.3 3.8-8.8 2.7 1.7 3.2 4 2.9 5.7 1.1-.6 1.9-1.9 2.1-3.1 1.9 1.7 3.8 3.8 3.8 6.2 0 3.1-2.5 5.8-6.3 5.8z"/><path d="M17 37.5v7M24 37.5v7M31 37.5v7"/></symbol>
+</svg>
+
+<!-- ============ Uvodna animacija: skica ventila se izriše, kolo se zavrti, voda steče ============ -->
+<div class="intro" id="intro" aria-hidden="true">
+  <div class="intro__stage">
+    <svg class="intro__mark" viewBox="0 0 120 100" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <path class="d d--ghost" pathLength="1" style="--d:100ms" d="M5.4 59.2C29 58.7 87 59.8 114.6 58.9"/>
+      <path class="d" pathLength="1" style="--d:60ms" d="M6 58.6C30 57.9 88 59.1 114 58.3"/>
+      <path class="d" pathLength="1" style="--d:120ms" d="M6 71.4C32 72 86 70.8 114 71.6"/>
+      <path class="d d--ghost" pathLength="1" style="--d:170ms" d="M6.6 70.8C33 71.6 85 70.3 113.4 71.1"/>
+      <path class="d d--s" pathLength="1" style="--d:300ms" d="M23.5 52.2l.3 25.6"/>
+      <path class="d d--s" pathLength="1" style="--d:340ms" d="M29 52.4l-.2 25.3"/>
+      <path class="d d--s" pathLength="1" style="--d:400ms" d="M91 52.1l.3 25.6"/>
+      <path class="d d--s" pathLength="1" style="--d:440ms" d="M96.5 52.4l-.2 25.3"/>
+      <path class="d d--m" pathLength="1" style="--d:480ms" d="M41.5 58.4C44.5 47 75.5 46.6 78.5 58.4"/>
+      <path class="d d--m" pathLength="1" style="--d:520ms" d="M41.5 71.6C44.5 83 75.5 83.4 78.5 71.6"/>
+      <path class="d d--s" pathLength="1" style="--d:640ms" d="M56.8 48.6V31.4M63.2 48.6V31.4"/>
+      <path class="d d--s" pathLength="1" style="--d:720ms" d="M52.4 36h15.2"/>
+      <path class="d d--s d--ghost" pathLength="1" style="--d:760ms" d="M4 88H116M4 84.5v7M116 84.5v7"/>
+      <g class="intro__wheel">
+        <path class="d d--m" pathLength="1" style="--d:780ms" d="M47.4 19.2a12.6 12.6 0 1 0 25.2 0a12.6 12.6 0 1 0-25.2 0"/>
+        <path class="d d--s" pathLength="1" style="--d:900ms" d="M60 6.8v24.8M47.6 19.2h24.8"/>
+      </g>
+      <path class="intro__flow" pathLength="1" d="M8 65h104"/>
+    </svg>
+    <p class="intro__word"><span>Košnik</span></p>
+    <p class="intro__sub"><span>Inštalacije</span><span>Kranj</span><span>od 2014</span></p>
+  </div>
+</div>
+
+<!-- Napredek drsenja: cev, ki se polni -->
+<div class="progress" aria-hidden="true"><i id="progress"></i></div>
+
+<!-- Cevovod ob robu strani (samo široki zasloni) -->
+<div class="rail" id="rail" aria-hidden="true">
+  <i class="rail__fill" id="rail-fill"></i>
+</div>
+
+<!-- ============ Glava ============ -->
+<header class="hdr" id="hdr">
+  <div class="wrap hdr__in">
+    <a class="brand" href="#vrh">
+      <svg class="brand__mark" viewBox="0 0 120 100" aria-hidden="true"><use href="#nk-mark"/></svg>
+      <span class="brand__txt"><b>Košnik</b><small>Inštalacije · Kranj</small></span>
+    </a>
+    <nav class="nav" aria-label="Glavna navigacija">
+      <ul>
+        <li><a href="#storitve">Storitve</a></li>
+        <li><a href="#o-nas">O nas</a></li>
+        <li><a href="#postopek">Postopek</a></li>
+        <li><a href="#galerija">Galerija</a></li>
+        <li><a href="#mnenja">Mnenja</a></li>
+        <li><a href="#vprasanja">Vprašanja</a></li>
+        <li><a href="#kontakt">Kontakt</a></li>
+      </ul>
+    </nav>
+    <a class="btn btn--red btn--sm hdr__tel" href="tel:+38631444466" aria-label="Pokliči 031 444 466">
+      <svg class="ico" aria-hidden="true"><use href="#i-phone"/></svg><span>031&nbsp;444&nbsp;466</span>
+    </a>
+    <button class="burger" type="button" aria-label="Odpri meni" aria-expanded="false" aria-controls="mnav"><span></span><span></span></button>
+  </div>
+</header>
+
+<div class="mnav" id="mnav" inert>
+  <nav aria-label="Mobilna navigacija">
+    <ul>
+      <li style="--i:0"><a href="#storitve"><span>01</span>Storitve</a></li>
+      <li style="--i:1"><a href="#o-nas"><span>02</span>O nas</a></li>
+      <li style="--i:2"><a href="#postopek"><span>03</span>Postopek</a></li>
+      <li style="--i:3"><a href="#galerija"><span>04</span>Galerija</a></li>
+      <li style="--i:4"><a href="#mnenja"><span>05</span>Mnenja</a></li>
+      <li style="--i:5"><a href="#vprasanja"><span>06</span>Vprašanja</a></li>
+      <li style="--i:6"><a href="#kontakt"><span>07</span>Kontakt</a></li>
+    </ul>
+  </nav>
+  <div class="mnav__foot">
+    <a class="btn btn--red btn--lg" href="tel:+38631444466"><svg class="ico" aria-hidden="true"><use href="#i-phone"/></svg>031&nbsp;444&nbsp;466</a>
+    <a href="mailto:instalacijekosnik@gmail.com">instalacijekosnik@gmail.com</a>
+    <span>Jezerska cesta 78b, 4000 Kranj</span>
+  </div>
+</div>
+
+<main id="vsebina">
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="vrh" aria-labelledby="hero-h">
+  <div class="gridbg" aria-hidden="true"></div>
+  <div class="wrap hero__in">
+    <div class="hero__copy">
+      <p class="label label--inv hero__kick" data-hero style="--i:0"><span class="tick" aria-hidden="true"></span>Strojne inštalacije · Kranj · od 2014</p>
+      <h1 class="hero__h" id="hero-h">
+        <span class="ln"><span style="--i:0">Inštalater</span></span>
+        <span class="ln"><span style="--i:1">strojnih</span></span>
+        <span class="ln"><span style="--i:2">inštalacij</span></span>
+        <span class="ln"><span style="--i:3" class="red">v Kranju.</span></span>
+      </h1>
+      <p class="hero__lead" data-hero style="--i:4">Vodovod, centralno ogrevanje, toplotne črpalke in talno gretje. Nejc Košnik z ekipo uredi vse od menjave pipe do celotne kotlovnice – v hišah, stanovanjih in novogradnjah po Gorenjskem.</p>
+      <div class="hero__cta" data-hero style="--i:5">
+        <a class="btn btn--red btn--lg" href="tel:+38631444466"><svg class="ico" aria-hidden="true"><use href="#i-phone"/></svg>Pokliči 031&nbsp;444&nbsp;466</a>
+        <a class="btn btn--line-inv btn--lg" href="#kontakt">Pošlji povpraševanje</a>
+      </div>
+      <ul class="proof" data-hero style="--i:6">
+        <li>
+          <b>4,5</b>
+          <span class="stars" style="--v:.9" aria-hidden="true"></span>
+          <small>Google · 10 mnenj</small>
+        </li>
+        <li><b>9,8<em>/10</em></b><small>Mojmojster · 25 ocen</small></li>
+        <li><b>12<em> let</em></b><small>izkušenj · od 2014</small></li>
+      </ul>
+    </div>
+
+    <figure class="hero__fig" id="hero-fig">
+      <div class="hero__photo">
+        <img src="assets/img/toplotna-crpalka-sanitarna-voda-kranj-1200.webp"
+             srcset="assets/img/toplotna-crpalka-sanitarna-voda-kranj-640.webp 640w, assets/img/toplotna-crpalka-sanitarna-voda-kranj-1200.webp 1200w"
+             sizes="(min-width: 1024px) 38vw, 92vw" width="1200" height="1600" fetchpriority="high"
+             alt="Toplotna črpalka za sanitarno vodo, priklopljena poleg kotla v kotlovnici – delo Nejca Košnika">
+      </div>
+      <ul class="callouts" aria-hidden="true">
+        <li class="co co--l" style="--x:69%; --y:17%; --i:0"><span>Raztezna posoda</span></li>
+        <li class="co co--l" style="--x:66%; --y:47%; --i:1"><span>TČ za sanitarno vodo</span></li>
+        <li class="co co--r" style="--x:28%; --y:63%; --i:2"><span>Kotlovska armatura</span></li>
+      </ul>
+      <figcaption class="hero__cap"><span>Ref. 01</span>Toplotna črpalka za sanitarno vodo ob obstoječi kotlovnici</figcaption>
+    </figure>
+  </div>
+  <div class="wrap hero__foot" data-hero style="--i:7">
+    <span>N 46.2473° · E 14.3777°</span>
+    <span>Jezerska cesta 78b, 4000 Kranj</span>
+    <a href="#storitve" class="cue">Storitve <svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+  </div>
+</section>
+
+<!-- Trak s storitvami, ki se premika z drsenjem -->
+<div class="band" aria-hidden="true">
+  <div class="band__track" id="band">
+    <span>Vodovod</span><i></i><span>Centralno ogrevanje</span><i></i><span>Toplotne črpalke</span><i></i><span>Talno gretje</span><i></i><span>Kopalnice</span><i></i><span>Kotlovnice</span><i></i><span>Plinske napeljave</span><i></i>
+    <span>Vodovod</span><i></i><span>Centralno ogrevanje</span><i></i><span>Toplotne črpalke</span><i></i><span>Talno gretje</span><i></i><span>Kopalnice</span><i></i><span>Kotlovnice</span><i></i><span>Plinske napeljave</span><i></i>
+  </div>
+</div>
+
+<!-- ============ STORITVE ============ -->
+<section class="sec sec--paper" id="storitve" aria-labelledby="st-h" data-rail="01">
+  <div class="wrap">
+    <header class="head">
+      <p class="label" data-reveal><span class="num">01</span>Storitve</p>
+      <h2 class="h2" id="st-h" data-reveal="words">Strojne inštalacije v&nbsp;Kranju in okolici</h2>
+      <p class="head__intro" data-reveal style="--i:2">Vodovod, ogrevanje in sanitarna oprema iz ene roke. Kot vodovodar in inštalater delamo v hišah, stanovanjih in novogradnjah – od manjšega popravila do celotnega sistema.</p>
+    </header>
+
+    <ul class="svc" role="list">
+      <li data-reveal style="--i:0">
+        <a class="svc__card" href="vodovodne-instalacije-kranj.html">
+          <span class="svc__no">01</span>
+          <svg class="svc__ico" aria-hidden="true"><use href="#s-voda"/></svg>
+          <h3 class="h3">Vodovodne inštalacije</h3>
+          <p>Nova napeljava v novogradnji ali prenovi in vsa manjša vodovodna popravila.</p>
+          <ul class="tags"><li>Menjava pip in odtokov</li><li>Menjava bojlerja</li><li>Priklop pralnega stroja</li></ul>
+          <span class="svc__more">Vodovodar Kranj<svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></span>
+        </a>
+      </li>
+      <li data-reveal style="--i:1">
+        <a class="svc__card" href="centralno-ogrevanje-kranj.html">
+          <span class="svc__no">02</span>
+          <svg class="svc__ico" aria-hidden="true"><use href="#s-radiator"/></svg>
+          <h3 class="h3">Centralno ogrevanje</h3>
+          <p>Kotlovnice, priklop kurilnih naprav ter menjava radiatorjev in ventilov – tudi z zamrzovanjem cevi.</p>
+          <ul class="tags"><li>Kotlovnice</li><li>Menjava radiatorjev</li><li>Hidravlično uravnoteženje</li></ul>
+          <span class="svc__more">Ogrevanje<svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></span>
+        </a>
+      </li>
+      <li data-reveal style="--i:2">
+        <a class="svc__card" href="toplotne-crpalke-kranj.html">
+          <span class="svc__no">03</span>
+          <svg class="svc__ico" aria-hidden="true"><use href="#s-crpalka"/></svg>
+          <h3 class="h3">Toplotne črpalke</h3>
+          <p>Toplotne črpalke za sanitarno vodo in ogrevanje – dobava, priklop in zagon.</p>
+          <ul class="tags"><li>Za sanitarno vodo</li><li>Zrak–voda</li><li>Voda–voda</li></ul>
+          <span class="svc__more">Toplotne črpalke<svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></span>
+        </a>
+      </li>
+      <li data-reveal style="--i:0">
+        <a class="svc__card" href="talno-ogrevanje-kranj.html">
+          <span class="svc__no">04</span>
+          <svg class="svc__ico" aria-hidden="true"><use href="#s-talno"/></svg>
+          <h3 class="h3">Talno ogrevanje</h3>
+          <p>Vodno talno, stensko in stropno gretje v novogradnjah in prenovah.</p>
+          <ul class="tags"><li>Sistemske plošče</li><li>Razdelilniki</li><li>Gretje v kopalnici</li></ul>
+          <span class="svc__more">Talno gretje<svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></span>
+        </a>
+      </li>
+      <li data-reveal style="--i:1">
+        <a class="svc__card" href="adaptacija-kopalnic-kranj.html">
+          <span class="svc__no">05</span>
+          <svg class="svc__ico" aria-hidden="true"><use href="#s-kopalnica"/></svg>
+          <h3 class="h3">Prenova kopalnic</h3>
+          <p>Adaptacija kopalnice od nove napeljave do montaže tuš kabine in sanitarne opreme.</p>
+          <ul class="tags"><li>Tuš kabine</li><li>Podometni kotlički</li><li>Sanitarna oprema</li></ul>
+          <span class="svc__more">Kopalnice<svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></span>
+        </a>
+      </li>
+      <li data-reveal style="--i:2">
+        <a class="svc__card" href="centralno-ogrevanje-kranj.html#kotli">
+          <span class="svc__no">06</span>
+          <svg class="svc__ico" aria-hidden="true"><use href="#s-plamen"/></svg>
+          <h3 class="h3">Plin in kotli</h3>
+          <p>Plinske napeljave, plinski kotli ter kotli na pelete, drva in kurilno olje.</p>
+          <ul class="tags"><li>Plinske napeljave</li><li>Kotli na biomaso</li><li>Popravila peči</li></ul>
+          <span class="svc__more">Kotli in plin<svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ POSEBNOST: zamrzovanje cevi ============ -->
+<section class="sec sec--ink freeze" id="zamrzovanje" aria-labelledby="fz-h" data-rail="02">
+  <div class="gridbg" aria-hidden="true"></div>
+  <div class="wrap freeze__in">
+    <div class="freeze__copy">
+      <p class="label label--inv" data-reveal><span class="num">02</span>Menjava radiatorjev</p>
+      <h2 class="h2" id="fz-h" data-reveal="words">Radiator zamenjamo brez praznjenja sistema</h2>
+      <p class="freeze__lead" data-reveal data-step="0">Z napravo za zamrzovanje cevi naredimo na cevi ledeni čep. Vode iz sistema ni treba izpustiti, zato je menjava radiatorja ali ventila hitrejša – v bloku pa sosedom ni treba ostati brez ogrevanja.</p>
+      <ol class="freeze__steps">
+        <li data-step="1"><span class="freeze__n">1</span><div><h3>Zamrznemo</h3><p>Na dovod in povratek namestimo zamrzovalni objemki. Voda v cevi zamrzne v trden čep.</p></div></li>
+        <li data-step="2"><span class="freeze__n">2</span><div><h3>Zamenjamo</h3><p>Radiator ali ventil zamenjamo, medtem ko preostanek sistema ostane poln.</p></div></li>
+        <li data-step="3"><span class="freeze__n">3</span><div><h3>Odtalimo</h3><p>Ledeni čep se stali, sistem odzračimo in ogrevanje spet deluje.</p></div></li>
+      </ol>
+      <a class="link-arrow link-arrow--inv" href="centralno-ogrevanje-kranj.html#zamrzovanje">Več o menjavi radiatorjev<svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+    </div>
+
+    <figure class="freeze__fig" id="freeze-fig" data-state="0" aria-hidden="true">
+      <svg viewBox="0 0 480 400" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <!-- navpični vod (dvižni vod) -->
+        <path class="fz-riser" d="M60 20v360M104 20v360"/>
+        <text class="fz-t" x="60" y="14" text-anchor="middle">DOVOD</text>
+        <text class="fz-t" x="104" y="394" text-anchor="middle">POVRATEK</text>
+        <!-- priključka do radiatorja: pred čepom -->
+        <path class="fz-pipe" d="M60 120H226"/>
+        <path class="fz-pipe" d="M104 282H226"/>
+        <!-- priključka za čepom -->
+        <path class="fz-pipe fz-after" d="M226 120H312"/>
+        <path class="fz-pipe fz-after" d="M226 282H312"/>
+        <!-- tok vode -->
+        <path class="fz-flow" d="M60 120H312M312 282H104"/>
+        <!-- ledeni čep -->
+        <path class="fz-ice" d="M190 120h36"/>
+        <path class="fz-ice" d="M190 282h36"/>
+        <!-- zamrzovalni objemki -->
+        <g class="fz-clamp">
+          <rect x="182" y="100" width="52" height="40" rx="3"/>
+          <rect x="182" y="262" width="52" height="40" rx="3"/>
+          <path d="M208 86v-8M196 90l-5-6M220 90l5-6M208 316v8M196 312l-5 6M220 312l5 6"/>
+          <text class="fz-t" x="208" y="72" text-anchor="middle">−60 °C</text>
+        </g>
+        <!-- radiator -->
+        <g class="fz-rad">
+          <rect x="312" y="96" width="132" height="210" rx="4"/>
+          <path d="M338 96v210M364 96v210M390 96v210M416 96v210"/>
+          <text class="fz-t" x="378" y="336" text-anchor="middle">RADIATOR</text>
+        </g>
+        <text class="fz-t fz-label" x="208" y="222" text-anchor="middle">LEDENI ČEP</text>
+        <g class="fz-ok"><circle cx="378" cy="200" r="22"/><path d="M367 200l8 8 15-16"/></g>
+      </svg>
+    </figure>
+  </div>
+</section>
+
+<!-- ============ O NAS ============ -->
+<section class="sec sec--white about" id="o-nas" aria-labelledby="on-h" data-rail="03">
+  <div class="wrap about__in">
+    <div class="about__copy">
+      <p class="label" data-reveal><span class="num">03</span>O nas</p>
+      <h2 class="h2" id="on-h" data-reveal="words">Inštalacije iz Kranja, od leta 2014</h2>
+      <!-- DEPLOY STEP: dopolni z Nejčevo osebno zgodbo (izobrazba, začetki, število sodelavcev) in dodaj njegovo fotografijo. -->
+      <p data-reveal>Za imenom stoji <strong>Nejc Košnik</strong>, inštalater strojnih inštalacij s sedežem na Jezerski cesti v Kranju. Samostojno dejavnost je odprl oktobra 2014, danes pa z ekipo ureja vodovod, ogrevanje in kopalnice po vsej Gorenjski.</p>
+      <p data-reveal>Delamo od menjave pipe ali bojlerja do nove kotlovnice, toplotne črpalke in talnega gretja. Preden karkoli zamenjamo, pogledamo celoten sistem – zato stranke v mnenjih pogosto omenijo tudi dober nasvet.</p>
+
+      <ul class="values" role="list">
+        <li data-reveal style="--i:0"><span class="values__no">A</span><h3>Odzivnost</h3><p>Pokličete in se dogovorimo za termin. Hitro odzivnost omeni skoraj vsako mnenje o nas.</p></li>
+        <li data-reveal style="--i:1"><span class="values__no">B</span><h3>Celoten sistem</h3><p>Ne zamenjamo le dela, ki ne deluje. Preverimo, zakaj ne deluje, in predlagamo rešitev, ki zdrži.</p></li>
+        <li data-reveal style="--i:2"><span class="values__no">C</span><h3>Čisto delo</h3><p>Po koncu sistem preizkusimo in zaženemo, za sabo pa pospravimo.</p></li>
+      </ul>
+    </div>
+
+    <aside class="about__side" aria-label="Številke">
+      <figure class="gauge" data-reveal id="gauge">
+        <svg viewBox="0 0 240 240" aria-hidden="true">
+          <circle class="gauge__rim" cx="120" cy="120" r="112"/>
+          <path class="gauge__track" pathLength="100" d="M45.8 194.2A105 105 0 1 1 194.2 194.2"/>
+          <path class="gauge__val" pathLength="100" d="M45.8 194.2A105 105 0 1 1 194.2 194.2" style="--v:90"/>
+          <g class="gauge__ticks">
+            <path d="M63.4 176.6L53.5 186.5M39 107.2L25.2 105M82.8 46.9L76.4 34.5M157.2 46.9L163.6 34.5M201 107.2L214.8 105M176.6 176.6L186.5 186.5"/>
+          </g>
+          <text class="gauge__n" x="74.7" y="165.3">0</text><text class="gauge__n" x="56.8" y="110">1</text><text class="gauge__n" x="90.9" y="63">2</text><text class="gauge__n" x="149.1" y="63">3</text><text class="gauge__n" x="183.2" y="110">4</text><text class="gauge__n" x="165.3" y="165.3">5</text>
+          <g class="gauge__needle" style="--a:108deg"><path d="M120 120L120 34"/><circle cx="120" cy="120" r="9"/></g>
+        </svg>
+        <figcaption><b>4,5</b><span>Ocena na Googlu · 10 mnenj</span></figcaption>
+      </figure>
+
+      <dl class="stats">
+        <div data-reveal style="--i:0"><dt>Začetek dejavnosti</dt><dd><span data-count="2014" data-from="1990">2014</span></dd></div>
+        <div data-reveal style="--i:1"><dt>Let izkušenj</dt><dd><span data-count="12">12</span></dd></div>
+        <div data-reveal style="--i:2"><dt>Ocena na Mojmojster</dt><dd><span data-count="9.8" data-dec="1">9,8</span><small>/10</small></dd></div>
+        <div data-reveal style="--i:3"><dt>Ocen na Mojmojster</dt><dd><span data-count="25">25</span></dd></div>
+      </dl>
+    </aside>
+  </div>
+</section>
+
+<!-- ============ POSTOPEK ============ -->
+<section class="sec sec--ink proc" id="postopek" aria-labelledby="po-h" data-rail="04">
+  <div class="gridbg" aria-hidden="true"></div>
+  <div class="wrap">
+    <header class="head">
+      <p class="label label--inv" data-reveal><span class="num">04</span>Postopek</p>
+      <h2 class="h2" id="po-h" data-reveal="words">Od klica do delujočega sistema</h2>
+      <p class="head__intro" data-reveal style="--i:2">Štirje koraki, brez presenečenj. Vsako delo se začne s pogovorom in konča z zagonom sistema.</p>
+    </header>
+    <div class="proc__wrap" id="proc">
+      <div class="proc__pipe" aria-hidden="true"><i id="proc-fill"></i></div>
+      <ol class="proc__list">
+        <li class="proc__step"><span class="proc__node" aria-hidden="true"></span><span class="proc__no">01</span><h3>Pokličete ali pišete</h3><p>Opišete težavo ali načrt – po telefonu 031&nbsp;444&nbsp;466 ali prek obrazca. Fotografija pogosto pove največ.</p></li>
+        <li class="proc__step"><span class="proc__node" aria-hidden="true"></span><span class="proc__no">02</span><h3>Ogled in nasvet</h3><p>Pridemo pogledat, izmerimo in predlagamo rešitev, ki ustreza vašemu sistemu in proračunu.</p></li>
+        <li class="proc__step"><span class="proc__node" aria-hidden="true"></span><span class="proc__no">03</span><h3>Ponudba</h3><p>Pred začetkom dobite ponudbo z materialom in delom, da veste, kaj naročate.</p></li>
+        <li class="proc__step"><span class="proc__node" aria-hidden="true"></span><span class="proc__no">04</span><h3>Izvedba in zagon</h3><p>Montiramo, preizkusimo tesnost, zaženemo sistem in za sabo pospravimo.</p></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- ============ GALERIJA (vodoravno drsenje na namizju) ============ -->
+<section class="gal" id="galerija" aria-labelledby="ga-h" data-rail="05">
+  <div class="gal__pin">
+    <div class="gal__layout">
+      <div class="gal__intro">
+        <p class="label" data-reveal><span class="num">05</span>Galerija</p>
+        <h2 class="h2" id="ga-h" data-reveal="words">Iz naših del</h2>
+        <p data-reveal style="--i:2">Fotografije so iz resničnih projektov: kotlovnica s toplotno črpalko, prenovljena kopalnica, plinski kotel in talno gretje v novogradnji.</p>
+        <p class="gal__hint" aria-hidden="true"><svg class="ico"><use href="#i-arrow"/></svg>Drsite naprej</p>
+      </div>
+      <div class="gal__view" id="gal-view">
+      <div class="gal__track" id="gal-track">
+      <!-- DEPLOY STEP: ko Nejc pošlje več fotografij, dodaj nove <figure class="gal__item"> po istem vzorcu. -->
+      <figure class="gal__item gal__item--tall" data-reveal="img">
+        <button class="gal__btn" type="button" data-full="assets/img/toplotna-crpalka-sanitarna-voda-kranj-1200.webp" aria-label="Povečaj fotografijo: toplotna črpalka za sanitarno vodo">
+          <img src="assets/img/toplotna-crpalka-sanitarna-voda-kranj-640.webp" srcset="assets/img/toplotna-crpalka-sanitarna-voda-kranj-640.webp 640w, assets/img/toplotna-crpalka-sanitarna-voda-kranj-1200.webp 1200w" sizes="(min-width: 1024px) 30vw, 78vw" width="640" height="853" decoding="async" fetchpriority="low" alt="Toplotna črpalka za sanitarno vodo in raztezna posoda v kotlovnici">
+        </button>
+        <figcaption><span>Ref. 01</span>Toplotna črpalka za sanitarno vodo</figcaption>
+      </figure>
+      <figure class="gal__item gal__item--tall" data-reveal="img">
+        <button class="gal__btn" type="button" data-full="assets/img/prenova-kopalnice-kranj-1200.webp" aria-label="Povečaj fotografijo: prenova kopalnice">
+          <img src="assets/img/prenova-kopalnice-kranj-640.webp" srcset="assets/img/prenova-kopalnice-kranj-640.webp 640w, assets/img/prenova-kopalnice-kranj-1200.webp 1200w" sizes="(min-width: 1024px) 30vw, 78vw" width="640" height="853" decoding="async" fetchpriority="low" alt="Prenovljena kopalnica z viseče montiranim WC-jem in tuš kadjo pred zaključnimi deli">
+        </button>
+        <figcaption><span>Ref. 02</span>Prenova kopalnice</figcaption>
+      </figure>
+      <figure class="gal__item gal__item--wide" data-reveal="img">
+        <button class="gal__btn" type="button" data-full="assets/img/talno-ogrevanje-novogradnja-kranj-1600.webp" aria-label="Povečaj fotografijo: talno ogrevanje v novogradnji">
+          <img src="assets/img/talno-ogrevanje-novogradnja-kranj-800.webp" srcset="assets/img/talno-ogrevanje-novogradnja-kranj-800.webp 800w, assets/img/talno-ogrevanje-novogradnja-kranj-1600.webp 1600w" sizes="(min-width: 1024px) 52vw, 88vw" width="800" height="600" decoding="async" fetchpriority="low" alt="Cevi vodnega talnega ogrevanja, položene na sistemske plošče v novogradnji">
+        </button>
+        <figcaption><span>Ref. 03</span>Talno ogrevanje v novogradnji</figcaption>
+      </figure>
+      <figure class="gal__item gal__item--tall" data-reveal="img">
+        <button class="gal__btn" type="button" data-full="assets/img/plinski-kotel-montaza-kranj-1200.webp" aria-label="Povečaj fotografijo: montaža plinskega kotla">
+          <img src="assets/img/plinski-kotel-montaza-kranj-640.webp" srcset="assets/img/plinski-kotel-montaza-kranj-640.webp 640w, assets/img/plinski-kotel-montaza-kranj-1200.webp 1200w" sizes="(min-width: 1024px) 30vw, 78vw" width="640" height="853" decoding="async" fetchpriority="low" alt="Stenski plinski kotel s priključki za ogrevanje in sanitarno vodo">
+        </button>
+        <figcaption><span>Ref. 04</span>Montaža plinskega kotla</figcaption>
+      </figure>
+      <div class="gal__end">
+        <p class="h3">Naslednji projekt je lahko vaš.</p>
+        <a class="btn btn--red btn--lg" href="#kontakt">Pošlji povpraševanje</a>
+        <a class="link-arrow" href="https://www.mojmojster.net/izvajalec/nejc_kosnik" target="_blank" rel="noopener">Reference na Mojmojster<svg class="ico" aria-hidden="true"><use href="#i-out"/></svg></a>
+      </div>
+      </div><!-- /gal__track -->
+      </div><!-- /gal__view -->
+    </div><!-- /gal__layout -->
+  </div>
+</section>
+
+<!-- ============ MNENJA ============ -->
+<section class="sec sec--white rev" id="mnenja" aria-labelledby="mn-h" data-rail="06">
+  <div class="wrap">
+    <header class="head">
+      <p class="label" data-reveal><span class="num">06</span>Mnenja strank</p>
+      <h2 class="h2" id="mn-h" data-reveal="words">„Vrhunska storitev za dobro ceno.“</h2>
+      <p class="head__intro" data-reveal style="--i:2">Mnenje z Googla. Spodaj še nekaj drugih – z Googla, Mojmojstra in Primerjam.si, prepisanih brez popravkov.</p>
+    </header>
+
+    <div class="rev__in">
+      <div class="rev__sum">
+        <a class="score" href="https://maps.google.com/?cid=13656609047360480369" target="_blank" rel="noopener" data-reveal>
+          <span class="score__src">Google</span>
+          <span class="score__v">4,5<small>/5</small></span>
+          <span class="stars stars--lg" style="--v:.9" aria-hidden="true"></span>
+          <span class="score__n">10 mnenj · preberi vsa<svg class="ico" aria-hidden="true"><use href="#i-out"/></svg></span>
+        </a>
+        <a class="score" href="https://www.mojmojster.net/izvajalec/nejc_kosnik" target="_blank" rel="noopener" data-reveal style="--i:1">
+          <span class="score__src">Mojmojster</span>
+          <span class="score__v">9,8<small>/10</small></span>
+          <span class="bar" style="--v:.98" aria-hidden="true"><i></i></span>
+          <span class="score__n">Ocena podjetja · 25 ocen<svg class="ico" aria-hidden="true"><use href="#i-out"/></svg></span>
+        </a>
+        <a class="btn btn--ink btn--lg rev__write" href="https://search.google.com/local/writereview?placeid=ChIJmQk75JK3ekcRcaROoJIFhr0" target="_blank" rel="noopener" data-reveal style="--i:2">Oddajte mnenje na Googlu</a>
+      </div>
+
+      <ul class="quotes" role="list">
+        <li class="q" data-reveal style="--i:0">
+          <blockquote><p>Zelo odziven, zanesljiv vodovodar, uredil nam je tudi ogrevanje, toplo priporočam!</p></blockquote>
+          <p class="q__by"><b>Jure Humar</b><span>Google · pred 3 leti</span></p>
+          <div class="q__reply">
+            <p class="q__rl">Odgovor lastnika</p>
+            <p>„Hvala Jure! … hvala za zaupanje in naj ti bo toplo.“</p>
+          </div>
+        </li>
+        <li class="q" data-reveal style="--i:1">
+          <blockquote><p>Mojster se je odzval isti dan, ko sem ga poklical in še isti dan izvedel popravilo, korektno in hitro.</p></blockquote>
+          <p class="q__by"><b>Milan J.</b><span>Primerjam.si</span></p>
+        </li>
+        <li class="q" data-reveal style="--i:0">
+          <blockquote><p>Hitra odzivnost strokovno narejeno in še kakšen pameten nasvet dobiš. Le tako naprej.</p></blockquote>
+          <p class="q__by"><b>Igor</b><span>Google · pred 5 leti</span></p>
+        </li>
+        <li class="q" data-reveal style="--i:1">
+          <blockquote><p>Korekten odnos in hitro opravljeno delo.</p></blockquote>
+          <p class="q__by"><b>Tone K.</b><span>Mojmojster · pregled, menjava bojlerja pri centralni</span></p>
+        </li>
+        <li class="q" data-reveal style="--i:0">
+          <blockquote><p>Svetovanje glede menjave peči in celotnega ogrevanja.</p></blockquote>
+          <p class="q__by"><b>Savs M.</b><span>Mojmojster · popravilo plinske peči</span></p>
+        </li>
+        <li class="q" data-reveal style="--i:1">
+          <blockquote><p>Kvaliteto, odzivnost, prijaznost.</p></blockquote>
+          <p class="q__by"><b>Brigita P.</b><span>Primerjam.si</span></p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ VPRAŠANJA ============ -->
+<section class="sec sec--paper faq" id="vprasanja" aria-labelledby="fq-h" data-rail="07">
+  <div class="wrap faq__in">
+    <header class="head head--side">
+      <p class="label" data-reveal><span class="num">07</span>Vprašanja</p>
+      <h2 class="h2" id="fq-h" data-reveal="words">Pogosta vprašanja</h2>
+      <p class="head__intro" data-reveal style="--i:2">Ne najdete odgovora? Pokličite <a href="tel:+38631444466">031&nbsp;444&nbsp;466</a> – hitreje je kot pisati.</p>
+    </header>
+    <div class="acc">
+      <details data-reveal style="--i:0">
+        <summary><span>Ali lahko zamenjate radiator brez praznjenja celotnega sistema?</span><svg class="ico" aria-hidden="true"><use href="#i-plus"/></svg></summary>
+        <div class="acc__body"><p>Da. Radiatorje in ventile menjamo tudi s sistemom zamrzovanja cevi: na cevi naredimo ledeni čep, zato celotnega sistema ni treba izprazniti. To je posebej praktično v blokih, kjer bi sicer morali izprazniti celoten dvižni vod.</p></div>
+      </details>
+      <details data-reveal style="--i:1">
+        <summary><span>Kje opravljate storitve?</span><svg class="ico" aria-hidden="true"><use href="#i-plus"/></svg></summary>
+        <!-- DEPLOY STEP: z Nejcem potrdi seznam krajev, kamor hodi. -->
+        <div class="acc__body"><p>Sedež imamo na Jezerski cesti 78b v Kranju. Delamo v Kranju z okolico – Šenčur, Naklo, Cerklje, Preddvor, Tržič, Škofja Loka – in po Gorenjskem.</p></div>
+      </details>
+      <details data-reveal style="--i:2">
+        <summary><span>Ali montirate toplotne črpalke za sanitarno vodo?</span><svg class="ico" aria-hidden="true"><use href="#i-plus"/></svg></summary>
+        <div class="acc__body"><p>Da. Toplotno črpalko za sanitarno vodo dobavimo, priklopimo na vodovod in po potrebi na obstoječo kotlovnico ter jo zaženemo. Več na strani <a href="toplotne-crpalke-kranj.html">Toplotne črpalke</a>.</p></div>
+      </details>
+      <details data-reveal style="--i:3">
+        <summary><span>Ali lahko dobim subvencijo Eko sklada?</span><svg class="ico" aria-hidden="true"><use href="#i-plus"/></svg></summary>
+        <div class="acc__body"><p>Za toplotne črpalke in prenovo ogrevanja Eko sklad občanom pogosto ponuja nepovratne spodbude. Pogoji se spreminjajo, zato jih pred nakupom naprave preverite na <a href="https://www.ekosklad.si" target="_blank" rel="noopener">ekosklad.si</a>. Povemo vam, katero napravo predlagamo in kaj potrebujete od nas.</p></div>
+      </details>
+      <details data-reveal style="--i:4">
+        <summary><span>Koliko stane menjava bojlerja ali radiatorja?</span><svg class="ico" aria-hidden="true"><use href="#i-plus"/></svg></summary>
+        <div class="acc__body"><p>Cena je odvisna od naprave, dostopa in obstoječe napeljave. Po kratkem opisu ali ogledu pripravimo ponudbo z materialom in delom – preden začnemo.</p></div>
+      </details>
+      <details data-reveal style="--i:5">
+        <summary><span>Kako hitro lahko pridete?</span><svg class="ico" aria-hidden="true"><use href="#i-plus"/></svg></summary>
+        <div class="acc__body"><p>Pokličite <a href="tel:+38631444466">031&nbsp;444&nbsp;466</a> in termin uskladimo glede na nujnost. Pri puščanju vode najprej zaprite glavni ventil, nato nas pokličite.</p></div>
+      </details>
+      <details data-reveal style="--i:6">
+        <summary><span>Ali izdate račun?</span><svg class="ico" aria-hidden="true"><use href="#i-plus"/></svg></summary>
+        <div class="acc__body"><p>Da. Smo zavezanec za DDV (ID za DDV SI97464937), za vsako delo izdamo račun.</p></div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ============ KONTAKT ============ -->
+<section class="sec sec--ink contact" id="kontakt" aria-labelledby="ko-h" data-rail="08">
+  <div class="gridbg" aria-hidden="true"></div>
+  <div class="wrap contact__in">
+    <div class="contact__info">
+      <p class="label label--inv" data-reveal><span class="num">08</span>Kontakt</p>
+      <h2 class="h2" id="ko-h" data-reveal="words">Pokličite ali pošljite povpraševanje</h2>
+      <p class="contact__lead" data-reveal style="--i:2">Najhitreje nas dobite po telefonu. Če pišete, dodajte kraj in kratek opis – fotografijo okvare ali prostora lahko priložite v e-poštnem programu, ki se odpre.</p>
+      <a class="bigtel" href="tel:+38631444466" data-reveal style="--i:3"><span>031</span> <span>444</span> <span>466</span></a>
+      <ul class="facts" role="list">
+        <li data-reveal style="--i:0"><svg class="ico" aria-hidden="true"><use href="#i-mail"/></svg><div><small>E-pošta</small><a href="mailto:instalacijekosnik@gmail.com">instalacijekosnik@gmail.com</a></div></li>
+        <li data-reveal style="--i:1"><svg class="ico" aria-hidden="true"><use href="#i-pin"/></svg><div><small>Naslov</small><span>Jezerska cesta 78b, 4000 Kranj</span><a class="facts__sub" href="https://www.google.com/maps/dir/?api=1&amp;destination=46.2473214,14.3776877" target="_blank" rel="noopener">Navodila za pot</a></div></li>
+        <!-- DEPLOY STEP: Google navaja le »odpre se ob 7.00«. Z Nejcem potrdi delovne dni in uro zaključka. -->
+        <li data-reveal style="--i:2"><svg class="ico" aria-hidden="true"><use href="#i-clock"/></svg><div><small>Delovni čas</small><span>Delavniki od 7.00</span><span class="facts__sub">Termin po dogovoru</span></div></li>
+        <li data-reveal style="--i:3"><svg class="ico" aria-hidden="true"><use href="#i-doc"/></svg><div><small>Podjetje</small><span>Inštalacije centralnih in vodovodnih naprav, Nejc Košnik s.p.</span><span class="facts__sub">Matična št. 6698107000 · ID za DDV SI97464937</span></div></li>
+      </ul>
+    </div>
+
+    <div class="contact__form" data-reveal style="--i:1">
+      <form class="form" id="form" novalidate>
+        <p class="form__h">Povpraševanje</p>
+        <div class="fld">
+          <label for="f-ime">Ime in priimek <abbr title="obvezno">*</abbr></label>
+          <input id="f-ime" name="ime" type="text" autocomplete="name" required minlength="2" aria-describedby="e-ime">
+          <p class="fld__err" id="e-ime" aria-live="polite"></p>
+        </div>
+        <div class="fld-row">
+          <div class="fld">
+            <label for="f-tel">Telefon <abbr title="obvezno">*</abbr></label>
+            <input id="f-tel" name="telefon" type="tel" autocomplete="tel" inputmode="tel" required aria-describedby="e-tel">
+            <p class="fld__err" id="e-tel" aria-live="polite"></p>
+          </div>
+          <div class="fld">
+            <label for="f-mail">E-pošta</label>
+            <input id="f-mail" name="email" type="email" autocomplete="email" aria-describedby="e-mail">
+            <p class="fld__err" id="e-mail" aria-live="polite"></p>
+          </div>
+        </div>
+        <div class="fld-row">
+          <div class="fld">
+            <label for="f-kraj">Kraj</label>
+            <input id="f-kraj" name="kraj" type="text" autocomplete="address-level2" placeholder="npr. Kranj, Šenčur">
+          </div>
+          <div class="fld">
+            <label for="f-sto">Storitev</label>
+            <select id="f-sto" name="storitev">
+              <option>Vodovod / popravilo</option>
+              <option>Menjava bojlerja</option>
+              <option>Centralno ogrevanje / radiatorji</option>
+              <option>Toplotna črpalka</option>
+              <option>Talno ogrevanje</option>
+              <option>Prenova kopalnice</option>
+              <option>Plin / kotel</option>
+              <option>Drugo</option>
+            </select>
+          </div>
+        </div>
+        <div class="fld">
+          <label for="f-sp">Sporočilo <abbr title="obvezno">*</abbr></label>
+          <textarea id="f-sp" name="sporocilo" rows="4" required minlength="10" aria-describedby="e-sp" placeholder="Kaj potrebujete? Npr. pušča ventil na radiatorju v dnevni sobi."></textarea>
+          <p class="fld__err" id="e-sp" aria-live="polite"></p>
+        </div>
+        <div class="form__btns">
+          <button class="btn btn--red btn--lg" type="submit" value="mail"><svg class="ico" aria-hidden="true"><use href="#i-mail"/></svg>Pošlji po e-pošti</button>
+          <button class="btn btn--line btn--lg" type="submit" value="sms">Pošlji kot SMS</button>
+        </div>
+        <p class="form__note">Obrazec ničesar ne shranjuje – odpre vaš e-poštni program ali SMS s pripravljenim sporočilom. <a href="zasebnost.html">Politika zasebnosti</a></p>
+        <p class="form__status" id="form-status" role="status"></p>
+      </form>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <div class="map" id="map" data-reveal>
+      <div class="map__ph">
+        <svg class="ico" aria-hidden="true"><use href="#i-pin"/></svg>
+        <p><b>Jezerska cesta 78b, Kranj</b>Zemljevid Google se naloži šele, ko ga odprete, saj Google pri tem nastavi svoje piškotke.</p>
+        <div class="map__btns">
+          <button class="btn btn--light" type="button" id="map-load">Prikaži zemljevid</button>
+          <a class="btn btn--line-inv" href="https://maps.google.com/?cid=13656609047360480369" target="_blank" rel="noopener">Odpri v Google Zemljevidih</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ Noga ============ -->
+<footer class="ftr">
+  <div class="wrap ftr__in">
+    <div class="ftr__brand">
+      <a class="brand brand--lg" href="#vrh">
+        <svg class="brand__mark" viewBox="0 0 120 100" aria-hidden="true"><use href="#nk-mark"/></svg>
+        <span class="brand__txt"><b>Košnik</b><small>Inštalacije · Kranj</small></span>
+      </a>
+      <p>Inštalater strojnih inštalacij in vodovodar iz Kranja. Vodovod, centralno ogrevanje, toplotne črpalke in talno gretje po Gorenjskem.</p>
+    </div>
+    <nav class="ftr__col" aria-label="Storitve">
+      <p class="ftr__h">Storitve</p>
+      <ul>
+        <li><a href="vodovodne-instalacije-kranj.html">Vodovodar Kranj</a></li>
+        <li><a href="centralno-ogrevanje-kranj.html">Centralno ogrevanje</a></li>
+        <li><a href="toplotne-crpalke-kranj.html">Toplotne črpalke</a></li>
+        <li><a href="talno-ogrevanje-kranj.html">Talno ogrevanje</a></li>
+        <li><a href="adaptacija-kopalnic-kranj.html">Prenova kopalnic</a></li>
+      </ul>
+    </nav>
+    <nav class="ftr__col" aria-label="Stran">
+      <p class="ftr__h">Stran</p>
+      <ul>
+        <li><a href="#o-nas">O nas</a></li>
+        <li><a href="#postopek">Postopek</a></li>
+        <li><a href="#galerija">Galerija</a></li>
+        <li><a href="#mnenja">Mnenja</a></li>
+        <li><a href="#vprasanja">Vprašanja</a></li>
+      </ul>
+    </nav>
+    <div class="ftr__col">
+      <p class="ftr__h">Kontakt</p>
+      <ul>
+        <li><a href="tel:+38631444466">031&nbsp;444&nbsp;466</a></li>
+        <li><a href="mailto:instalacijekosnik@gmail.com">instalacijekosnik@gmail.com</a></li>
+        <li>Jezerska cesta 78b<br>4000 Kranj</li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap ftr__legal">
+    <p>© <span data-year>2026</span> Inštalacije centralnih in vodovodnih naprav, Nejc Košnik s.p. · Matična št. 6698107000 · ID za DDV SI97464937</p>
+    <p><a href="zasebnost.html">Zasebnost</a><a href="zasebnost.html#piskotki">Piškotki</a><button type="button" class="linkbtn" data-ck-open>Nastavitve piškotkov</button></p>
+  </div>
+</footer>
+
+<!-- Mobilna vrstica za klic -->
+<div class="mbar" id="mbar">
+  <a class="btn btn--red" href="tel:+38631444466"><svg class="ico" aria-hidden="true"><use href="#i-phone"/></svg>Pokliči</a>
+  <a class="btn btn--light" href="#kontakt">Povpraševanje</a>
+</div>
+
+<!-- Povečava fotografij -->
+<dialog class="lb" id="lb" aria-label="Povečana fotografija">
+  <figure class="lb__fig">
+    <img id="lb-img" src="assets/img/toplotna-crpalka-sanitarna-voda-kranj-1200.webp" alt="" loading="lazy">
+    <figcaption id="lb-cap"></figcaption>
+  </figure>
+  <button class="lb__btn lb__prev" type="button" aria-label="Prejšnja fotografija"><svg class="ico" aria-hidden="true"><use href="#i-left"/></svg></button>
+  <button class="lb__btn lb__next" type="button" aria-label="Naslednja fotografija"><svg class="ico" aria-hidden="true"><use href="#i-right"/></svg></button>
+  <button class="lb__btn lb__close" type="button" aria-label="Zapri"><svg class="ico" aria-hidden="true"><use href="#i-close"/></svg></button>
+</dialog>
+
+<!-- Piškotki -->
+<div class="ck" id="ck" role="region" aria-label="Obvestilo o piškotkih" hidden>
+  <p class="ck__h">Piškotki</p>
+  <p>Stran uporablja le nujno shranjevanje za delovanje. Zemljevid Google naložimo samo z vašim soglasjem, ker Google pri tem nastavi svoje piškotke. <a href="zasebnost.html#piskotki">Več o piškotkih</a></p>
+  <div class="ck__btns">
+    <button class="btn btn--light btn--sm" type="button" data-ck="all">Sprejmi vse</button>
+    <button class="btn btn--light btn--sm" type="button" data-ck="none">Samo nujni</button>
+    <button class="linkbtn" type="button" data-ck-open>Nastavitve</button>
+  </div>
+</div>
+<dialog class="ckd" id="ckd" aria-labelledby="ckd-h">
+  <form method="dialog" class="ckd__in">
+    <h2 id="ckd-h" class="h3">Nastavitve piškotkov</h2>
+    <label class="sw">
+      <input type="checkbox" checked disabled>
+      <span class="sw__ui" aria-hidden="true"></span>
+      <span class="sw__txt"><b>Nujni</b>Shranijo vašo izbiro glede piškotkov in to, da ste uvodno animacijo že videli. Brez njih stran ne deluje pravilno.</span>
+    </label>
+    <label class="sw">
+      <input type="checkbox" id="ck-ext">
+      <span class="sw__ui" aria-hidden="true"></span>
+      <span class="sw__txt"><b>Zunanje vsebine</b>Zemljevid Google Maps. Ob nalaganju Google nastavi svoje piškotke in prejme vaš naslov IP.</span>
+    </label>
+    <div class="ckd__btns">
+      <button class="btn btn--ink" type="submit" value="save">Shrani izbiro</button>
+      <button class="btn btn--line" type="submit" value="all">Sprejmi vse</button>
+    </div>
+  </form>
+</dialog>
+
+</body>
+</html>
