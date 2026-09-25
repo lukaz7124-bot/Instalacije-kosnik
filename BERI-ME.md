@@ -24,7 +24,7 @@ Glava, noga in ikone so v vseh 8 HTML datotekah enake – ob spremembi (npr. tel
 
 Poišči `DEPLOY STEP` po vseh datotekah:
 
-1. **Domena** – povsod je `https://nejc-kosnik.vercel.app`. Če bo drugačna, zamenjaj v vseh `.html`, `sitemap.xml` in `robots.txt`.
+1. **Domena** – stran je objavljena na **https://instalacije-kosnik.vercel.app** (Vercel projekt `instalacije-kosnik`, povezan z GitHub repozitorijem [Instalacije-kosnik](https://github.com/lukaz7124-bot/Instalacije-kosnik) – vsak `git push` na `main` se objavi sam). Če bo stran dobila lastno domeno, jo zamenjaj v vseh `.html`, `sitemap.xml` in `robots.txt`.
 2. **E-pošta** – napisano je bilo `inštalacijekošnik@gmail.com`, Gmail pa ne dovoli šumnikov, zato je uporabljeno **instalacijekosnik@gmail.com**. Potrdi z Nejcem.
 3. **Delovni čas** – Google navaja le »odpre se ob 7.00«. Potrdi dni in uro zaključka.
 4. **Kraji** – seznam okoliških krajev (Šenčur, Naklo, Cerklje, Preddvor, Tržič, Škofja Loka) potrdi z Nejcem.
@@ -64,4 +64,4 @@ Brez soglasja stran uporablja le nujno shrambo (`nk-piskotki`, `nk-uvod`). Zemlj
 
 ## Obrazec
 
-Brez strežnika: sestavi e-pošto (`mailto:`) ali SMS na 031 444 466. Če bo kdaj potreben pravi obrazec, zamenjaj oddajo v `assets/main.js` (razdelek 8).
+Brez strežnika. Gumb **»Pošlji prek Gmaila«** odpre Gmailovo okno za pisanje v novem zavihku (`mail.google.com/mail/?view=cm`) z izpolnjenim prejemnikom, zadevo in sporočilom – obiskovalec samo klikne »Pošlji«. Na telefonu (dotik) se namesto tega odpre e-poštna aplikacija prek `mailto:` (na Androidu Gmail), ker spletni Gmail na telefonu izgubi izpolnjena polja. Povezava »Odpri v e-poštnem programu« je za druge programe, »Pošlji kot SMS« pa pripravi SMS na 031 444 466. Koda: `assets/main.js`, razdelek 8.

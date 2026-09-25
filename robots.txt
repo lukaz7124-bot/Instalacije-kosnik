@@ -1,5 +1,5 @@
 User-agent: *
 Allow: /
 
-# DEPLOY STEP: zamenjaj domeno, če stran ne bo na nejc-kosnik.vercel.app
-Sitemap: https://nejc-kosnik.vercel.app/sitemap.xml
+# Če bo stran dobila lastno domeno, jo zamenjaj tudi tukaj
+Sitemap: https://instalacije-kosnik.vercel.app/sitemap.xml
