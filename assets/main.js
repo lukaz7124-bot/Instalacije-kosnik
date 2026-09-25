@@ -22,6 +22,7 @@
 
   var mqDesk = w.matchMedia('(min-width: 1024px)');
   var mqProcRow = w.matchMedia('(min-width: 901px)');
+  var mqFinePointer = w.matchMedia('(hover: hover) and (pointer: fine)');
 
   /* =======================================================
      1. Uvodna animacija
@@ -383,7 +384,7 @@
   }
 
   /* =======================================================
-     8. Obrazec: sestavi e-pošto ali SMS (brez strežnika)
+     8. Obrazec: pripravi sporočilo v Gmailu, e-pošti ali SMS (brez strežnika)
      ======================================================= */
   var form = $('#form');
   if (form) {
@@ -427,8 +428,19 @@
           (kraj ? '\nKraj: ' + kraj : '') +
           '\nStoritev: ' + sto;
         var subj = 'Povpraševanje: ' + sto + (kraj ? ' – ' + kraj : '');
-        w.location.href = 'mailto:' + MAIL + '?subject=' + encodeURIComponent(subj) + '&body=' + encodeURIComponent(body);
-        status.textContent = 'Odpira se vaš e-poštni program s pripravljenim sporočilom. Če se ni odprl, pišite na ' + MAIL + '.';
+        var mailto = 'mailto:' + MAIL + '?subject=' + encodeURIComponent(subj) + '&body=' + encodeURIComponent(body);
+        /* Gmail v brskalniku: okno za pisanje z izpolnjenim prejemnikom, zadevo in sporočilom.
+           Na telefonu spletni Gmail izgubi izpolnjena polja, zato tam odpremo e-poštno aplikacijo (na Androidu Gmail). */
+        if (via === 'mailto' || !mqFinePointer.matches) {
+          w.location.href = mailto;
+          status.textContent = 'Odpira se e-pošta s pripravljenim sporočilom – preverite ga in kliknite »Pošlji«. Če se ni odprla, pišite na ' + MAIL + '.';
+        } else {
+          var gmail = 'https://mail.google.com/mail/?view=cm&fs=1&to=' + encodeURIComponent(MAIL) +
+            '&su=' + encodeURIComponent(subj) + '&body=' + encodeURIComponent(body);
+          var win = w.open(gmail, '_blank');
+          if (win) win.opener = null; else w.location.href = gmail;
+          status.textContent = 'Gmail se je odprl v novem zavihku s pripravljenim sporočilom – preverite ga in kliknite »Pošlji«. Če niste prijavljeni, se najprej prijavite v svoj Google račun.';
+        }
       }
     });
   }
